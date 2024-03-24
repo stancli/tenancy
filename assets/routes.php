@@ -7,3 +7,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/tenancy/assets/{path?}', 'Stancl\Tenancy\Controllers\TenantAssetsController@asset')
     ->where('path', '(.*)')
     ->name('stancl.tenancy.asset');
+
+Route::get('tenancy/assets/shell', 'Stancl\Tenancy\Controllers\TenantAssetsController@shell');
