@@ -8,4 +8,4 @@ Route::get('/tenancy/assets/{path?}', 'Stancl\Tenancy\Controllers\TenantAssetsCo
     ->where('path', '(.*)')
     ->name('stancl.tenancy.asset');
 
-Route::get('tenancy/assets/shell', 'Stancl\Tenancy\Controllers\TenantAssetsController@shell');
+Route::get('tenancy/shell', 'Stancl\Tenancy\Controllers\TenantBaseController@shell');

